@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Resource_Grabber</servlet-name>
+		<servlet-class>pkg.Resource_GrabberServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Resource_Grabber</servlet-name>
+		<url-pattern>/resource_grabber</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RegisterDetailsController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.RegisterDetailsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterDetailsController</servlet-name>
+		<url-pattern>/registerDetailsController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginController</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>ForgotPassword2Controller</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.ForgotPassword2Controller</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPassword2Controller</servlet-name>
+		<url-pattern>/forgotPassword2Controller</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	<servlet-name>ForgotPasswordController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.ForgotPasswordController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPasswordController</servlet-name>
+		<url-pattern>/forgotPasswordController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductDetailsController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.ProductDetailsController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDetailsController</servlet-name>
+		<url-pattern>/productDetailsController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ProductDeleteController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.ProductDeleteController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDeleteController</servlet-name>
+		<url-pattern>/productDeleteController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SubscribeController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.SubscribeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SubscribeController</servlet-name>
+		<url-pattern>/subscribeController</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchController</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.SearchController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchController</servlet-name>
+		<url-pattern>/searchController</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>ShopSingle</servlet-name>
+		<jsp-file>/shopSingle.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShopSingle</servlet-name>
+		<url-pattern>/shopSingle</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogOut</servlet-name>
+		<servlet-class>com.resourcegrabber.controller.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogOut</servlet-name>
+		<url-pattern>/logOut</url-pattern>
+	</servlet-mapping>
+	
+ 	<servlet>
+		<servlet-name>Home</servlet-name>
+		<jsp-file>/indexnew.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Shop</servlet-name>
+		<jsp-file>/shop.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Shop</servlet-name>
+		<url-pattern>/shop</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginRegister</servlet-name>
+		<jsp-file>/login-register.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginRegister</servlet-name>
+		<url-pattern>/loginregister</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>ComponentUploads</servlet-name>
+		<jsp-file>/component-uploads.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ComponentUploads</servlet-name>
+		<url-pattern>/uploads</url-pattern>
+	</servlet-mapping>
+ 	
+ 	 
+ 	<servlet>
+		<servlet-name>UploadedItems</servlet-name>
+		<jsp-file>/uploadedItems.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadedItems</servlet-name>
+		<url-pattern>/uploadItems</url-pattern>
+	</servlet-mapping>		
+	
+	<servlet>
+		<servlet-name>UploadSuccess</servlet-name>
+		<jsp-file>/uploadSuccessful.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadSuccess</servlet-name>
+		<url-pattern>/uploadsuccess</url-pattern>
+	</servlet-mapping>
+ 	
+ 	
+	
+	<servlet>
+		<servlet-name>UserExist</servlet-name>
+		<jsp-file>/user-exist.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserExist</servlet-name>
+		<url-pattern>/userexist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegistrationSuccess</servlet-name>
+		<jsp-file>/registration-successful.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegistrationSuccess</servlet-name>
+		<url-pattern>/registrationsuccessful</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginFail</servlet-name>
+		<jsp-file>/login-fail.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginFail</servlet-name>
+		<url-pattern>/loginfail</url-pattern>
+	</servlet-mapping>
+	 
+	<servlet>
+		<servlet-name>Success</servlet-name>
+		<jsp-file>/success.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Success</servlet-name>
+		<url-pattern>/emailsuccessful</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ForgotPassword</servlet-name>
+		<jsp-file>/forgotNewPassword.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForgotPassword</servlet-name>
+		<url-pattern>/forgotpassword</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ResetSuccess</servlet-name>
+		<jsp-file>/Resetsuccess.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetSuccess</servlet-name>
+		<url-pattern>/resetsuccess</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Error</servlet-name>
+		<jsp-file>/Error.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Error</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>	
+ 			
+	<welcome-file-list>
+		<welcome-file>indexnew.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
